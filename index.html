@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EKE SOFTWARE | Geleceğin Oyun & Yazılım Topluluğu</title>
+    <title>EKE SOFTWARE | Topluluk</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
@@ -18,25 +18,6 @@
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
                         orbitron: ['Orbitron', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            red: '#e50914',
-                            darkRed: '#800000',
-                            glow: '#ff2e3b',
-                            dark: '#0a0a0c',
-                            card: '#121218',
-                        }
-                    },
-                    animation: {
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'float': 'float 3s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        }
                     }
                 }
             }
@@ -44,163 +25,153 @@
     </script>
     <style>
         body {
-            background-color: #08080a;
+            background-color: #0b0c10;
             color: #e2e8f0;
             overflow-x: hidden;
         }
+        .glass-panel {
+            background: rgba(18, 20, 29, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+        }
         .glass-card {
-            background: rgba(18, 18, 24, 0.7);
+            background: rgba(22, 24, 35, 0.5);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .glass-card:hover {
-            border-color: rgba(229, 9, 20, 0.5);
-            transform: translateY(-5px);
+            border-color: rgba(229, 9, 20, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px -10px rgba(229, 9, 20, 0.15);
         }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #08080a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #e50914;
-            border-radius: 4px;
+        .red-glow {
+            box-shadow: 0 0 25px rgba(229, 9, 20, 0.35);
         }
     </style>
 </head>
 <body class="selection:bg-red-600 selection:text-white">
 
-    <!-- Ambient Background Glows -->
-    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-red-600/15 blur-[140px] pointer-events-none rounded-full"></div>
-    <div class="fixed bottom-0 right-0 w-[500px] h-[500px] bg-red-900/10 blur-[160px] pointer-events-none rounded-full"></div>
+    <!-- Arka Plan Işık Efektleri -->
+    <div class="fixed -top-24 left-1/2 -translate-x-1/2 w-[350px] sm:w-[600px] h-[350px] sm:h-[600px] bg-red-600/10 blur-[120px] pointer-events-none rounded-full"></div>
 
-    <!-- Navigation Bar -->
-    <nav class="sticky top-0 z-50 glass-card border-b border-white/5 px-6 py-4">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3 group">
-                <img src="eke_software_logo_4k.png" alt="EKE Logo" class="w-10 h-10 rounded-full border border-red-600/50 group-hover:scale-110 transition-transform duration-300">
-                <span class="font-orbitron font-bold text-xl tracking-wider text-white">EKE <span class="text-red-600">SOFTWARE</span></span>
+    <!-- Navigasyon (Header) -->
+    <header class="sticky top-0 z-50 glass-panel border-b border-white/5 px-4 sm:px-8 py-3.5">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2.5">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-red-600 to-red-900 flex items-center justify-center text-white font-orbitron font-black text-sm border border-red-500/30 overflow-hidden shadow-lg">
+                    <img src="eke_software_logo_4k.png" alt="" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                    <span>EKE</span>
+                </div>
+                <span class="font-orbitron font-extrabold text-base sm:text-lg tracking-wider text-white">EKE <span class="text-red-500">SOFTWARE</span></span>
             </a>
-            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-gray-300">
-                <a href="#about" class="hover:text-red-500 transition-colors">Hakkımızda</a>
-                <a href="#categories" class="hover:text-red-500 transition-colors">Kategoriler</a>
+            
+            <a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="px-3.5 sm:px-5 py-2 bg-red-600 hover:bg-red-500 text-white font-semibold rounded-xl text-xs sm:text-sm transition-all duration-200 flex items-center gap-2 shadow-md shadow-red-600/20 active:scale-95">
+                <i class="fa-brands fa-discord text-base"></i>
+                <span class="hidden sm:inline">Discord'a Katıl</span>
+                <span class="sm:hidden">Katıl</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Bölümü -->
+    <section class="pt-12 sm:pt-20 pb-12 px-4 max-w-4xl mx-auto text-center relative">
+        <!-- Logo Alanı -->
+        <div class="relative w-28 h-28 sm:w-36 sm:h-36 mx-auto mb-6">
+            <div class="absolute inset-0 bg-red-600/20 rounded-full blur-xl"></div>
+            <div class="relative w-full h-full rounded-3xl bg-neutral-900 border border-red-500/30 flex items-center justify-center overflow-hidden shadow-2xl">
+                <img src="eke_software_logo_4k.png" alt="EKE Logo" class="w-full h-full object-cover" onerror="this.onerror=null; this.src=''; this.parentElement.innerHTML='<span class=\'font-orbitron font-black text-3xl text-red-500\'>EKE</span>';">
             </div>
-            <a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="px-5 py-2.5 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-semibold rounded-xl shadow-lg shadow-red-600/30 hover:shadow-red-600/50 transition-all duration-300 flex items-center gap-2 text-sm group">
-                <i class="fa-brands fa-discord text-lg group-hover:rotate-12 transition-transform"></i>
-                <span>Discord'a Katıl</span>
-            </a>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="relative pt-20 pb-16 px-6 max-w-7xl mx-auto text-center">
-        <!-- Animated Logo Container -->
-        <div class="relative inline-block mb-8 group">
-            <div class="absolute -inset-1 bg-gradient-to-r from-red-600 to-red-900 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
-            <img src="eke_software_logo_4k.png" alt="EKE Software Logo" class="relative w-40 h-40 md:w-48 md:h-48 rounded-full border-2 border-red-500/80 shadow-2xl object-cover animate-float">
         </div>
 
-        <h1 class="font-orbitron font-black text-4xl md:text-6xl tracking-tight text-white mb-6">
-            EKE <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-600 to-red-800">SOFTWARE</span> COMMUNITY
+        <h1 class="font-orbitron font-black text-2xl sm:text-5xl tracking-tight text-white mb-4 leading-tight">
+            EKE <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700">SOFTWARE</span>
         </h1>
-        <p class="max-w-2xl mx-auto text-gray-400 text-base md:text-lg mb-10 font-normal leading-relaxed">
-            Oyun, yazılım, grafik tasarım ve rekabetçi yayın dünyasının buluştuğu tek adres. Topluluğumuza katılın, takım arkadaşlarınızı bulun ve kendinizi geliştirin!
+        
+        <p class="text-gray-400 text-xs sm:text-base max-w-xl mx-auto mb-8 font-normal leading-relaxed">
+            Oyun, yazılım, tasarım ve rekabetçi yayın dünyasının buluştuğu topluluk. Takım arkadaşlarını bul, sohbet et ve projelerini geliştir!
         </p>
 
-        <!-- Stats Counter Bar -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-16">
-            <div class="glass-card p-4 rounded-2xl">
-                <div class="font-orbitron text-2xl md:text-3xl font-bold text-white">500+</div>
-                <div class="text-xs text-gray-400 mt-1">Aktif Üye</div>
+        <!-- İstatistikler -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4 max-w-3xl mx-auto mb-12">
+            <div class="glass-card p-3.5 rounded-2xl">
+                <div class="font-orbitron text-xl sm:text-2xl font-bold text-white">500+</div>
+                <div class="text-[11px] text-gray-400 mt-0.5">Aktif Üye</div>
             </div>
-            <div class="glass-card p-4 rounded-2xl">
-                <div class="font-orbitron text-2xl md:text-3xl font-bold text-red-500">7/24</div>
-                <div class="text-xs text-gray-400 mt-1">Sesteyiz</div>
+            <div class="glass-card p-3.5 rounded-2xl">
+                <div class="font-orbitron text-xl sm:text-2xl font-bold text-red-500">7/24</div>
+                <div class="text-[11px] text-gray-400 mt-0.5">Sesli Odalar</div>
             </div>
-            <div class="glass-card p-4 rounded-2xl">
-                <div class="font-orbitron text-2xl md:text-3xl font-bold text-white">10+</div>
-                <div class="text-xs text-gray-400 mt-1">Kategori</div>
+            <div class="glass-card p-3.5 rounded-2xl">
+                <div class="font-orbitron text-xl sm:text-2xl font-bold text-white">10+</div>
+                <div class="text-[11px] text-gray-400 mt-0.5">Oyun & Kategoriler</div>
             </div>
-            <div class="glass-card p-4 rounded-2xl">
-                <div class="font-orbitron text-2xl md:text-3xl font-bold text-red-500">TR</div>
-                <div class="text-xs text-gray-400 mt-1">Topluluk</div>
+            <div class="glass-card p-3.5 rounded-2xl">
+                <div class="font-orbitron text-xl sm:text-2xl font-bold text-red-500">TR</div>
+                <div class="text-[11px] text-gray-400 mt-0.5">Aktif Topluluk</div>
             </div>
         </div>
     </section>
 
-    <!-- Categories Section -->
-    <section id="categories" class="py-16 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-14">
-            <h2 class="font-orbitron text-3xl font-bold text-white mb-3">ODAK ALANLARIMIZ</h2>
-            <p class="text-gray-400 text-sm">Sunucumuzda öne çıkan ana kategori ve odalar</p>
+    <!-- Kategoriler -->
+    <section class="py-8 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-8">
+            <h2 class="font-orbitron text-xl sm:text-2xl font-bold text-white mb-1.5">ODAK ALANLARIMIZ</h2>
+            <p class="text-gray-400 text-xs">Sunucumuzda öne çıkan topluluk başlıkları</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <!-- Valorant Card -->
-            <div class="glass-card p-8 rounded-3xl transition-all duration-300 relative overflow-hidden group">
-                <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-red-600/10 rounded-full blur-2xl group-hover:bg-red-600/25 transition-all"></div>
-                <div class="w-16 h-16 rounded-2xl bg-red-600/20 border border-red-500/30 flex items-center justify-center text-red-500 mb-6 text-3xl group-hover:scale-110 transition-transform font-bold font-orbitron">
+            <div class="glass-card p-5 rounded-2xl">
+                <div class="w-10 h-10 rounded-xl bg-red-600/10 border border-red-500/20 flex items-center justify-center text-red-500 mb-4 font-orbitron font-bold text-sm">
                     VAL
                 </div>
-                <div class="flex items-center gap-3 mb-3">
-                    <h3 class="font-orbitron font-bold text-xl text-white">VALORANT</h3>
-                    <span class="px-2.5 py-0.5 text-[10px] font-bold bg-red-500/20 text-red-400 border border-red-500/30 rounded-full">TACTICAL</span>
-                </div>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Dereceli (Ranked) pre-made takımları kurun, VP çekilişlerine katılın ve özel turnuvalarda yerinizi alın.
+                <h3 class="font-orbitron font-bold text-base text-white mb-1">VALORANT</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">
+                    Ranked pre-made takımları kurun, çekilişlere katılın ve turnuvalarda yerinizi alın.
                 </p>
             </div>
 
             <!-- CS2 Card -->
-            <div class="glass-card p-8 rounded-3xl transition-all duration-300 relative overflow-hidden group">
-                <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-yellow-600/10 rounded-full blur-2xl group-hover:bg-yellow-600/25 transition-all"></div>
-                <div class="w-16 h-16 rounded-2xl bg-yellow-500/20 border border-yellow-500/30 flex items-center justify-center text-yellow-500 mb-6 text-3xl group-hover:scale-110 transition-transform">
+            <div class="glass-card p-5 rounded-2xl">
+                <div class="w-10 h-10 rounded-xl bg-yellow-500/10 border border-yellow-500/20 flex items-center justify-center text-yellow-500 mb-4 text-base">
                     <i class="fa-solid fa-crosshairs"></i>
                 </div>
-                <div class="flex items-center gap-3 mb-3">
-                    <h3 class="font-orbitron font-bold text-xl text-white">COUNTER-STRIKE 2</h3>
-                    <span class="px-2.5 py-0.5 text-[10px] font-bold bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 rounded-full">FPS</span>
-                </div>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Faceit ve Premier lobileri, skin takas sohbetleri ve rekabetçi CS2 kadroları burada buluşuyor.
+                <h3 class="font-orbitron font-bold text-base text-white mb-1">COUNTER-STRIKE 2</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">
+                    Faceit & Premier lobileri, skin takas sohbetleri ve rekabetçi CS2 kadroları.
                 </p>
             </div>
 
-            <!-- Adobe & Software Card -->
-            <div class="glass-card p-8 rounded-3xl transition-all duration-300 relative overflow-hidden group">
-                <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-blue-600/10 rounded-full blur-2xl group-hover:bg-blue-600/25 transition-all"></div>
-                <div class="w-16 h-16 rounded-2xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-6 text-2xl font-black font-orbitron group-hover:scale-110 transition-transform">
-                    Ae / Ps
+            <!-- Software Card -->
+            <div class="glass-card p-5 rounded-2xl">
+                <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-4 font-orbitron font-bold text-xs">
+                    DEV
                 </div>
-                <div class="flex items-center gap-3 mb-3">
-                    <h3 class="font-orbitron font-bold text-xl text-white">ADOBE & YAZILIM</h3>
-                    <span class="px-2.5 py-0.5 text-[10px] font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30 rounded-full">DESIGN</span>
-                </div>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Photoshop, After Effects, CapCut edit yardımları, HTML/JS ve oyun geliştirme (Game Dev) destek odaları.
+                <h3 class="font-orbitron font-bold text-base text-white mb-1">TASAIM & YAZILIM</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">
+                    Photoshop, After Effects, CapCut edit yardımları, HTML/JS ve Game Dev sohbetleri.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Join Call to Action -->
-    <section class="py-20 px-6 max-w-5xl mx-auto text-center">
-        <div class="glass-card p-10 md:p-16 rounded-3xl border border-red-600/30 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-red-600/10 via-transparent to-red-600/10 pointer-events-none"></div>
-            <h2 class="font-orbitron text-3xl md:text-4xl font-extrabold text-white mb-4">AİLEMİZE KATILMAYA HAZIR MISIN?</h2>
-            <p class="text-gray-300 max-w-xl mx-auto mb-8 text-sm md:text-base">
-                Sohbet etmek, yeni arkadaşlıklar kurmak ve eğlenceli etkinliklerde yer almak için Discord sunucumuza davetlisin!
+    <!-- CTA Davet Alanı -->
+    <section class="py-12 px-4 max-w-3xl mx-auto text-center">
+        <div class="glass-card p-8 sm:p-12 rounded-3xl border border-red-500/20 relative overflow-hidden">
+            <h2 class="font-orbitron text-2xl sm:text-3xl font-extrabold text-white mb-3">ARAMIZA KATIL</h2>
+            <p class="text-gray-400 text-xs sm:text-sm max-w-md mx-auto mb-6">
+                Sohbet etmek, takım arkadaşı bulmak ve etkinliklere katılmak için hemen Discord'a gel!
             </p>
-            <a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-red-600 hover:bg-red-500 text-white font-bold rounded-2xl shadow-xl shadow-red-600/40 hover:shadow-red-600/60 hover:scale-105 transition-all duration-300">
-                <i class="fa-brands fa-discord text-2xl"></i>
-                <span class="font-orbitron text-lg">DISCORD SUNUCUSUNA KATIL</span>
+            <a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="inline-flex items-center gap-2.5 px-6 py-3.5 bg-red-600 hover:bg-red-500 text-white font-bold rounded-xl shadow-lg shadow-red-600/30 transition-all text-xs sm:text-sm active:scale-95">
+                <i class="fa-brands fa-discord text-lg"></i>
+                <span class="font-orbitron">DISCORD SUNUCUSUNA KATIL</span>
             </a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="border-t border-white/10 py-8 text-center text-xs text-gray-500">
+    <footer class="py-6 text-center text-[11px] text-gray-600 border-t border-white/5">
         <p>&copy; 2026 EKE Software. Tüm hakları saklıdır.</p>
     </footer>
 
