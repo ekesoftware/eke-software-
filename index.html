@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EKE SOFTWARE #911 | Official Software Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <style>
+    .card-glow:hover {
+      box-shadow: 0 10px 25px -5px rgba(239, 68, 68, 0.3);
+      border-color: rgba(239, 68, 68, 0.6);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-red-600 selection:text-white min-h-screen relative overflow-x-hidden">
+
+  <!-- Arka Plan Parlaması -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-red-600/10 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+
+  <!-- Navbar -->
+  <nav class="border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-xl fixed w-full z-50 top-0">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <div class="bg-gradient-to-tr from-red-600 to-orange-500 p-2.5 rounded-xl text-white shadow-lg shadow-red-600/30">
+          <i class="fa-solid fa-terminal text-xl"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-black tracking-widest bg-gradient-to-r from-red-500 via-orange-400 to-amber-300 bg-clip-text text-transparent">EKE SOFTWARE</span>
+          <span class="text-xs block text-slate-400 font-semibold">#911 Community</span>
+        </div>
+      </div>
+      
+      <a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="bg-[#5865F2] hover:bg-[#4752C4] text-white font-bold px-5 py-2.5 rounded-xl text-xs transition flex items-center gap-2 shadow-lg shadow-indigo-500/20">
+        <i class="fa-brands fa-discord text-base"></i> Discord'a Katıl
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-36 pb-12 px-6 text-center max-w-4xl mx-auto">
+    <div class="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-red-400 bg-red-950/50 px-4 py-1.5 rounded-full border border-red-500/30 mb-6">
+      <i class="fa-solid fa-users text-red-500"></i> 965+ ÜYE İLE AKTİF TOPLULUK
+    </div>
+    <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight tracking-tight">
+      Aradığın Tüm Araçlar & <br><span class="bg-gradient-to-r from-red-500 via-orange-400 to-amber-400 bg-clip-text text-transparent">Yazılımlar Tek Adreste</span>
+    </h1>
+    <p class="text-slate-400 text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
+      Valorant, CS2, GTA 5/FiveM, Adobe serisi ve sistem/ağ optimizasyon araçlarına doğrudan Discord sunucumuz üzerinden erişebilirsiniz.
+    </p>
+
+    <!-- Arama Çubuğu -->
+    <div class="max-w-xl mx-auto relative">
+      <i class="fa-solid fa-magnifying-glass absolute left-4 top-4 text-slate-500"></i>
+      <input type="text" id="searchInput" onkeyup="filterCards()" placeholder="Kategori veya araç ara... (Örn: Valorant, Adobe, RAM, DDoS)" class="w-full bg-slate-900/90 border border-slate-800 rounded-2xl pl-11 pr-4 py-3.5 text-sm focus:outline-none focus:border-red-500/80 transition shadow-2xl">
+    </div>
+  </section>
+
+  <!-- Grid Alanı -->
+  <section class="max-w-7xl mx-auto px-6 py-8 mb-16">
+    <div id="cardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- VALORANT -->
+      <div class="card-item bg-slate-900/50 border border-slate-800/80 rounded-2xl p-6 transition duration-300 card-glow flex flex-col justify-between backdrop-blur-sm">
+        <div>
+          <div class="flex justify-between items-start mb-4">
+            <div class="bg-red-600/10 p-3 rounded-xl border border-red-500/20 text-red-400">
+              <i class="fa-solid fa-crosshair text-2xl"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase bg-red-950/60 text-red-400 border border-red-800/40 px-2.5 py-1 rounded-lg">VALORANT</span>
+          </div>
+          <h3 class="text-lg font-bold mb-1 card-title">Valorant Paketi</h3>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">Spoofer, VGC Emulator, Injector, Hata Çözücü, Color Bot ve Skin Changer modülleri.</p>
+        </div>
+        <a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="w-full bg-slate-800 hover:bg-red-600 text-slate-200 hover:text-white font-bold text-xs py-3 rounded-xl transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-discord"></i> Kanala Git (#valorant)
+        </a>
+      </div>
+
+      <!-- ADOBE SUITE -->
+      <div class="card-item bg-slate-900/50 border border-slate-800/80 rounded-2xl p-6 transition duration-300 card-glow flex flex-col justify-between backdrop-blur-sm">
+        <div>
+          <div class="flex justify-between items-start mb-4">
+            <div class="bg-blue-600/10 p-3 rounded-xl border border-blue-500/20 text-blue-400">
+              <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase bg-blue-950/60 text-blue-400 border border-blue-800/40 px-2.5 py-1 rounded-lg">ADOBE</span>
+          </div>
+          <h3 class="text-lg font-bold mb-1 card-title">Adobe Creative Hub</h3>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">After Effects, Premiere Pro, Media Encoder ve Photoshop kurulum paketleri.</p>
+        </div>
+        <a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="w-full bg-slate-800 hover:bg-blue-600 text-slate-200 hover:text-white font-bold text-xs py-3 rounded-xl transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-discord"></i> Kanala Git (#adob-3)
+        </a>
+      </div>
+
+      <!-- GTA 5 & FIVEM -->
+      <div class="card-item bg-slate-900/50 border border-slate-800/80 rounded-2xl p-6 transition duration-300 card-glow flex flex-col justify-between backdrop-blur-sm">
+        <div>
+          <div class="flex justify-between items-start mb-4">
+            <div class="bg-amber-600/10 p-3 rounded-xl border border-amber-500/20 text-amber-400">
+              <i class="fa-solid fa-car-burst text-2xl"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase bg-amber-950/60 text-amber-400 border border-amber-800/40 px-2.5 py-1 rounded-lg">FIVEM</span>
+          </div>
+          <h3 class="text-lg font-bold mb-1 card-title">GTA 5 & FiveM Modları</h3>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">GTA 5 Modları, FiveM Hard Strafe, Strafe Macro, Tweak ve özel mod paketleri.</p>
+        </div>
+        <a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="w-full bg-slate-800 hover:bg-amber-600 text-slate-200 hover:text-white font-bold text-xs py-3 rounded-xl transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-discord"></i> Kanala Git (#fivem)
+        </a>
+      </div>
+
+      <!-- SİSTEM & OPTİMİZASYON -->
+      <div class="card-item bg-slate-900/50 border border-slate-800/80 rounded-2xl p-6 transition duration-300 card-glow flex flex-col justify-between backdrop-blur-sm">
+        <div>
+          <div class="flex justify-between items-start mb-4">
+            <div class="bg-emerald-600/10 p-3 rounded-xl border border-emerald-500/20 text-emerald-400">
+              <i class="fa-solid fa-microchip text-2xl"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase bg-emerald-950/60 text-emerald-400 border border-emerald-800/40 px-2.5 py-1 rounded-lg">SİSTEM</span>
+          </div>
+          <h3 class="text-lg font-bold mb-1 card-title">Sistem Araçları & Optimizer</h3>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">RAM Temizleyici, Windows Activator, Defender Kalıcı Kapama, Optimizer, Driver Booster, Revo Uninstaller.</p>
+        </div>
+        <a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="w-full bg-slate-800 hover:bg-emerald-600 text-slate-200 hover:text-white font-bold text-xs py-3 rounded-xl transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-discord"></i> Kanala Git (#hizmetler)
+        </a>
+      </div>
+
+      <!-- DISCORD & NETWORKING -->
+      <div class="card-item bg-slate-900/50 border border-slate-800/80 rounded-2xl p-6 transition duration-300 card-glow flex flex-col justify-between backdrop-blur-sm">
+        <div>
+          <div class="flex justify-between items-start mb-4">
+            <div class="bg-indigo-600/10 p-3 rounded-xl border border-indigo-500/20 text-indigo-400">
+              <i class="fa-solid fa-network-wired text-2xl"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase bg-indigo-950/60 text-indigo-400 border border-indigo-800/40 px-2.5 py-1 rounded-lg">AĞ & BOT</span>
+          </div>
+          <h3 class="text-lg font-bold mb-1 card-title">Discord & Ağ Araçları</h3>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">Nitro Generator/Checker, Token Generator, Vencord, SMS/WhatsApp Spam, DDoS Araçları.</p>
+        </div>
+        <a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="w-full bg-slate-800 hover:bg-indigo-600 text-slate-200 hover:text-white font-bold text-xs py-3 rounded-xl transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-discord"></i> Kanala Git (#discord)
+        </a>
+      </div>
+
+      <!-- CS 1.6 & CS2 & DİĞER OYUNLAR -->
+      <div class="card-item bg-slate-900/50 border border-slate-800/80 rounded-2xl p-6 transition duration-300 card-glow flex flex-col justify-between backdrop-blur-sm">
+        <div>
+          <div class="flex justify-between items-start mb-4">
+            <div class="bg-cyan-600/10 p-3 rounded-xl border border-cyan-500/20 text-cyan-400">
+              <i class="fa-solid fa-gamepad text-2xl"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase bg-cyan-950/60 text-cyan-400 border border-cyan-800/40 px-2.5 py-1 rounded-lg">OYUNLAR</span>
+          </div>
+          <h3 class="text-lg font-bold mb-1 card-title">CS2, CS 1.6 & Crab Game</h3>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">Counter-Strike hile ve konfigürasyonları, Crab Game modları, Roblox Executor ve Steam Free Oyun araçları.</p>
+        </div>
+        <a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="w-full bg-slate-800 hover:bg-cyan-600 text-slate-200 hover:text-white font-bold text-xs py-3 rounded-xl transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-discord"></i> Kanala Git (#cs-1-6)
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 bg-slate-950/90 py-8 text-center text-xs text-slate-600">
+    <p>© 2026 Eke Software #911. Tüm Hakları Saklıdır.</p>
+  </footer>
+
+  <script>
+    function filterCards() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.card-item');
+      cards.forEach(card => {
+        const title = card.querySelector('.card-title').innerText.toLowerCase();
+        if(title.includes(query)) {
+          card.style.display = "flex";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
