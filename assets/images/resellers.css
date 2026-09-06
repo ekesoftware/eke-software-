@@ -1,0 +1,258 @@
+#resellers-section {
+    display: none;
+    padding: 0 24px;
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.resellers-mode-active {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    overflow-x: hidden;
+}
+
+.resellers-mode-active #resellers-section {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.resellers-mode-active footer {
+    margin-top: auto;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+#resellers-section .resellers-layout {
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#resellers-section .display-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#resellers-section .screen-card {
+    background: rgba(15, 22, 36, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+#resellers-section .slideshow-wrapper {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#resellers-section .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#resellers-section .price-card {
+    background: rgba(12, 18, 30, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 15px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    position: relative;
+}
+
+#resellers-section .price-card.featured {
+    border-color: rgba(52, 152, 219, 0.22);
+}
+
+#resellers-section .price-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+#resellers-section .price-card h3 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+#resellers-section .price-card .amount {
+    color: #fff;
+    font-size: 1.58rem;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+#resellers-section .price-card .amount span {
+    font-size: 0.93rem;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 400;
+    margin-left: 3px;
+}
+
+#resellers-section .features-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+#resellers-section .feat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.93rem;
+}
+
+#resellers-section .feat i {
+    color: var(--primary, #3498db);
+    font-size: 1.125rem;
+}
+
+#resellers-section .btn-buy {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 15px;
+    border-radius: 9px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s ease;
+    width: 100%;
+    background: rgba(52, 152, 219, 0.18);
+    border: 1px solid rgba(52, 152, 219, 0.3);
+    color: #fff;
+}
+
+#resellers-section .btn-buy:hover {
+    background: rgba(52, 152, 219, 0.32);
+    color: #fff;
+}
+
+#resellers-section .badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(52, 152, 219, 0.45);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+#resellers-section .features-row-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+}
+
+#resellers-section .f-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    background: rgba(12, 18, 30, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.93rem;
+    white-space: nowrap;
+}
+
+#resellers-section .f-chip i {
+    font-size: 1.2rem;
+    color: var(--primary, #3498db);
+}
+
+@media (max-width: 768px) {
+    .resellers-mode-active #resellers-section {
+        padding-top: 64px;
+    }
+
+    #resellers-section .screen-card {
+        height: 240px;
+    }
+}
+
+@media (max-width: 600px) {
+    #resellers-section {
+        padding: 0 16px;
+    }
+
+    #resellers-section .display-grid,
+    #resellers-section .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    #resellers-section .screen-card {
+        height: 180px;
+    }
+
+    #resellers-section .price-card {
+        padding: 12px 14px;
+    }
+
+    #resellers-section .price-card h3 {
+        font-size: 0.95rem;
+    }
+
+    #resellers-section .price-card .amount {
+        font-size: 1.2rem;
+    }
+
+    #resellers-section .btn-buy {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+
+    #resellers-section .f-chip {
+        font-size: 0.78rem;
+        padding: 6px 10px;
+    }
+
+    .resellers-mode-active footer {
+        margin-top: auto;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    #resellers-section .display-grid,
+    #resellers-section .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #resellers-section .screen-card {
+        height: 200px;
+    }
+}
