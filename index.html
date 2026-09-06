@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eke Software - Oyun & Yazılım Merkezi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
 
+    <header class="navbar">
+        <div class="logo">EKE SOFTWARE</div>
+        <a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-discord-nav">
+            <i class='bx bxl-discord-alt'></i> Discord'a Katıl
+        </a>
+    </header>
+
+    <section class="hero">
+        <img src="assets/images/sb.webp" alt="Eke Software" class="hero-img">
+        <h1>Oyun, Hile ve Yazılım Arşivi</h1>
+        <p>Aradığın tüm araçlar, hileler, optimizasyon ve sistem yazılımları tek bir adreste!</p>
+        <div class="search-box">
+            <input type="text" id="searchInput" onkeyup="searchCards()" placeholder="Yazılım veya hile ara...">
+        </div>
+    </section>
+
+    <main class="container">
+
+        <!-- DISCORD -->
+        <h2 class="category-title"><i class='bx bxl-discord'></i> Discord Araçları</h2>
+        <div class="card-grid">
+            <div class="card"><h3>Discord Nitro Generator & Checker</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Discord Orbs Hilesi</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Discord Rozet Hilesi</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Vencord</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+        </div>
+
+        <!-- VALORANT -->
+        <h2 class="category-title"><i class='bx bx-target-lock'></i> Valorant Araçları</h2>
+        <div class="card-grid">
+            <div class="card"><h3>Valorant Hile</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Valorant Spoofer</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Valorant Hata Çözücü</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>VGC Emulator</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Valorant Injector</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Valorant Unlock All Skin Changer</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Valorant Color Bot</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Valorant Hesap Oluşturucu</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Valorant Bypass</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+        </div>
+
+        <!-- GTA & FIVEM -->
+        <h2 class="category-title"><i class='bx bx-car'></i> GTA V & FiveM</h2>
+        <div class="card-grid">
+            <div class="card"><h3>GTA 5 Modları & Hileleri</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>FiveM Hard Strafe & Strafe Macro</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>FiveM Tweak & Mods</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>FiveM FPS Boost Settings</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+        </div>
+
+        <!-- COUNTER STRIKE & OYUNLAR -->
+        <h2 class="category-title"><i class='bx bx-joystick'></i> CS & Diğer Oyunlar</h2>
+        <div class="card-grid">
+            <div class="card"><h3>CS 1.6 Hile</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Counter-Strike Hile</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Crab Game Hile</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Roblox Executor</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Steam Free Oyun Oynama</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>WeMod Pro</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+        </div>
+
+        <!-- ADOBE & TASARIM -->
+        <h2 class="category-title"><i class='bx bx-palette'></i> Adobe & Medya</h2>
+        <div class="card-grid">
+            <div class="card"><h3>Adobe After Effects</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Adobe Premiere Pro</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Adobe Media Encoder</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Adobe Photoshop</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Spotify Premium</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Video Downloader 4K</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+        </div>
+
+        <!-- SİSTEM & OPTİMİZASYON -->
+        <h2 class="category-title"><i class='bx bx-cog'></i> Sistem & Güvenlik Araçları</h2>
+        <div class="card-grid">
+            <div class="card"><h3>Driver Booster</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Revo Uninstaller</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Profil Kopyalama</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>WLP Engine</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Dosya Şifre Kırma</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>RAM Temizleyici</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Windows Etkinleştirici</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>DLL Fixer</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>AdBlocker & AdGuard</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Malwarebytes & Hitman Pro</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Ocean AC</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Defender Kalıcı Kapatıcı</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Speed Auto Clicker</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Advanced SystemCare Optimizer</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>GPU-Z</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+            <div class="card"><h3>Q Çeviri</h3><a href="https://discord.gg/tRMCgyZFaX" target="_blank" class="btn-download">İndir / Al</a></div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Eke Software. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
