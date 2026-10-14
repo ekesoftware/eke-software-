@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b13">
+  <meta name="description" content="Eke Software — oyun araçları, medya uygulamaları ve sistem yardımcıları arşivi.">
+  <title>Eke Software — Oyun & Yazılım Arşivi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Eke Software ana sayfa">
+      <span class="brand-mark">E</span><span>EKE<span class="brand-light"> SOFTWARE</span><small>TOOLS · APPS · UTILITIES</small></span>
+    </a>
+    <nav class="topnav"><a href="#arsiv">Arşiv</a><a href="#hakkinda">Hakkında</a><a href="#guvenlik">Güvenlik notu</a></nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç/kapat">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> EKE SOFTWARE / YAZILIM ARŞİVİ</div>
+        <h1>İhtiyacın olan araç.<br><span>Tek bir merkezde.</span></h1>
+        <p class="hero-text">Oyun yardımcıları, medya uygulamaları ve sistem araçlarını kategorilere ayır; ara, filtrele ve ilgili bilgiyi hızlıca bul.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#arsiv">Arşivi keşfet <span>↘</span></a><a class="btn btn-ghost" href="#guvenlik">Güvenli kullanım</a></div>
+        <div class="hero-stats"><div><strong>6</strong><span>KATEGORİ</span></div><div><strong id="toolCount">0</strong><span>ARŞİV KAYDI</span></div><div><strong>100%</strong><span>MOBİL UYUMLU</span></div></div>
+      </div>
+      <div class="hero-visual" aria-label="Eke Software arşiv paneli">
+        <div class="visual-grid"></div>
+        <div class="terminal-card">
+          <div class="terminal-head"><div class="window-dots"><i></i><i></i><i></i></div><span>eke://software/archive</span><span class="live-pill">READY</span></div>
+          <div class="terminal-body"><p class="terminal-muted">/* arşiv durum paneli */</p><p><span class="term-green">✓</span> Kategoriler yüklendi</p><p><span class="term-green">✓</span> Arama sistemi hazır</p><p><span class="term-green">✓</span> Mobil görünüm etkin</p><div class="terminal-line"><span>root@eke:~$</span> browse --tools <b>_</b></div></div>
+        </div>
+        <div class="float-chip chip-one">⌕ <span>Akıllı arama</span></div><div class="float-chip chip-two">✦ <span>Modern arayüz</span></div>
+      </div>
+    </section>
+
+    <section class="archive section" id="arsiv">
+      <div class="section-heading"><div><div class="eyebrow">01 / KEŞFET</div><h2>Yazılım arşivi</h2><p>Kategori seç veya bir yazılım adı ara.</p></div><div class="results-label"><span id="resultCount">0</span> sonuç gösteriliyor</div></div>
+      <div class="search-wrap"><span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="Yazılım veya kategori ara..." autocomplete="off"><kbd>CTRL K</kbd><button id="clearSearch" aria-label="Aramayı temizle">×</button></div>
+      <div class="filters" id="filters" aria-label="Kategori filtreleri"></div>
+      <div class="tool-grid" id="toolGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><div>⌕</div><h3>Sonuç bulunamadı</h3><p>Arama kelimesini değiştir veya başka bir kategori seç.</p><button class="btn btn-ghost" id="resetFilters">Filtreleri sıfırla</button></div>
+      <p class="archive-footnote">Not: İndirme bağlantısı doğrulanmamış kayıtlar için sahte veya ortak bir indirme adresi kullanılmaz.</p>
+    </section>
+
+    <section class="feature-section" id="hakkinda">
+      <div class="section-heading"><div><div class="eyebrow">02 / NEDEN EKE?</div><h2>Sade. Hızlı. Düzenli.</h2><p>Aradığın içeriğe gereksiz adımlar olmadan ulaş.</p></div></div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon">⌕</div><h3>Hızlı arama</h3><p>Yazılım adlarına ve kategorilere göre anında filtreleme.</p></article>
+        <article class="feature-card"><div class="feature-icon">▦</div><h3>Düzenli kategoriler</h3><p>Oyun, medya ve sistem araçları tek bir arayüzde.</p></article>
+        <article class="feature-card"><div class="feature-icon">↗</div><h3>Mobil uyumlu</h3><p>Telefon, tablet ve bilgisayarda rahat kullanım.</p></article>
+      </div>
+    </section>
+
+    <section class="security-banner" id="guvenlik"><div class="security-symbol">!</div><div><div class="eyebrow">ÖNCE GÜVENLİK</div><h2>İndirmeden önce kaynağı kontrol et.</h2><p>Resmî olmayan dosyalar zararlı yazılım içerebilir. Güvenlik araçlarını kapatmanı isteyen, parola isteyen veya hesabına erişim talep eden dosyalara dikkat et. Bağlantısı doğrulanmayan kayıtların indirme düğmesi etkin değildir.</p></div><a class="btn btn-ghost" href="https://www.virustotal.com/" target="_blank" rel="noopener noreferrer">Dosya kontrolü ↗</a></section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#"><span class="brand-mark">E</span><span>EKE<span class="brand-light"> SOFTWARE</span><small>TOOLS · APPS · UTILITIES</small></span></a><span>© <span id="year"></span> Eke Software. Tüm hakları saklıdır.</span><a href="#top" id="backTop">Yukarı çık ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
